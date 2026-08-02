@@ -1,14 +1,7 @@
-queue_rules:
-  - name: default
-    queue_conditions:
-      - "#approved-reviews-by>=1"
-    merge_conditions:
-      - check-success=slow-ci
 pull_request_rules:
-  - name: autoqueue-approved
+  - name: keep-fork-prs-updated
     conditions:
-      - base=release
-      - "#approved-reviews-by>=1"
+      - base=main
     actions:
-      queue:
-        name: default
+      update:
+        bot_account: "{{ author }}"
