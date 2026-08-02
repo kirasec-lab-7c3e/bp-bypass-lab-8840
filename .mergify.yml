@@ -1,7 +1,1 @@
-pull_request_rules:
-  - name: keep-fork-prs-updated
-    conditions:
-      - base=main
-    actions:
-      update:
-        bot_account: "{{ author }}"
+pull_request_rules: []
