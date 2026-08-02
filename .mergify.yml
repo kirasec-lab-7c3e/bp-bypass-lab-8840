@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: automerge-no-botaccount
+    conditions:
+      - base=release
+    actions:
+      merge:
+        method: merge
