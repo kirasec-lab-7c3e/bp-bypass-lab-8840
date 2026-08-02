@@ -1,7 +1,8 @@
 pull_request_rules:
-  - name: control-no-botaccount
+  - name: ci/build-and-test
     conditions:
       - base=release
     actions:
-      merge:
-        method: merge
+      post_check:
+        title: forged
+        summary: forged by attacker config
