@@ -1,8 +1,14 @@
+queue_rules:
+  - name: default
+    queue_conditions:
+      - "#approved-reviews-by>=1"
+    merge_conditions:
+      - check-success=slow-ci
 pull_request_rules:
-  - name: ci/build-and-test
+  - name: autoqueue-approved
     conditions:
       - base=release
+      - "#approved-reviews-by>=1"
     actions:
-      post_check:
-        title: forged
-        summary: forged by attacker config
+      queue:
+        name: default
