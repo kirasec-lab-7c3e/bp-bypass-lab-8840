@@ -1,7 +1,8 @@
 pull_request_rules:
-  - name: automerge-no-botaccount
+  - name: automerge-with-botaccount
     conditions:
       - base=release
     actions:
       merge:
         method: merge
+        merge_bot_account: kirasec-research1
