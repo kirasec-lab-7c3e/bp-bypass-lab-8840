@@ -1,8 +1,2 @@
-pull_request_rules:
-  - name: ci/build-and-test
-    conditions:
-      - base=release
-    actions:
-      post_check:
-        title: forged
-        summary: forged by attacker config
+# post_check rule 'ci/build-and-test' was removed without replacement (no success_conditions or neutral_conditions to migrate)
+{}
