@@ -1,8 +1,1 @@
-pull_request_rules:
-  - name: codeowner probe
-    conditions:
-      - base=main
-      - github-code-owner-review-satisfied
-    actions:
-      comment:
-        message: "codeowner condition satisfied"
+pull_request_rules: []
