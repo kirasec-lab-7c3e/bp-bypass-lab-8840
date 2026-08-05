@@ -1,1 +1,9 @@
-pull_request_rules: []
+pull_request_rules:
+  - name: repro secret team expansion
+    conditions:
+      - base=main
+      - -closed
+    actions:
+      request_reviews:
+        users_from_teams:
+          - "@kirasec-lab-7c3e/hidden-crew"
