@@ -1,9 +1,13 @@
+queue_rules:
+  - name: default
+    queue_branch_prefix: "ZZZPFX-"
+    merge_conditions: []
+
 pull_request_rules:
-  - name: repro secret team expansion
+  - name: auto queue
     conditions:
       - base=main
-      - -closed
+      - label=queueme
     actions:
-      request_reviews:
-        users_from_teams:
-          - "@kirasec-lab-7c3e/hidden-crew"
+      queue:
+        name: default
