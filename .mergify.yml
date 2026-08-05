@@ -1,9 +1,1 @@
-pull_request_rules:
-  - name: expand secret team
-    conditions:
-      - base=main
-      - -closed
-    actions:
-      request_reviews:
-        users_from_teams:
-          - "@kirasec-lab-7c3e/triage-secret-1pge0p7a"
+pull_request_rules: []
