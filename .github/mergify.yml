@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: ALT CONFIG ACTIVE
+    conditions:
+      - base=main
+    actions:
+      comment:
+        message: "alt config from .github/mergify.yml executed"
