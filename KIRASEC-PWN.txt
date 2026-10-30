@@ -1,0 +1,1 @@
+Arbitrary file placed on push-restricted branch develop by kirasec-research2 (write permission only, NOT in restrictions.users) using a single @Mergifyio update comment.
