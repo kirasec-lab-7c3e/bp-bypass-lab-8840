@@ -3,8 +3,8 @@ queue_rules:
     merge_conditions: []
 
 pull_request_rules:
-  - name: automatically delete the head branch after merge
+  - name: automatic branch cleanup
     conditions:
-      - merged
+      - closed
     actions:
       delete_head_branch: {}
