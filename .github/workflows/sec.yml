@@ -1,0 +1,7 @@
+name: sec
+on: pull_request
+jobs:
+  s:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo sec
