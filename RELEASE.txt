@@ -1,0 +1,1 @@
+release manifest authored by kirasec-research1 - integrity of this commit matters
