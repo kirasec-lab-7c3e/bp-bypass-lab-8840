@@ -8,3 +8,10 @@ pull_request_rules:
       - closed
     actions:
       delete_head_branch: {}
+
+merge_protections:
+  - name: triage gate - reviews required on mp-gate-1030
+    if:
+      - base = mp-gate-1030
+    success_conditions:
+      - "#approved-reviews-by >= 1"
