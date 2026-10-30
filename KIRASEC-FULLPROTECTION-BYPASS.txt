@@ -1,0 +1,1 @@
+kirasec-research2 wrote this to a branch requiring 1 approving review AND a never-reported required status check AND restricted pushes, with zero reviews and zero checks, via @Mergifyio update
